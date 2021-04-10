@@ -13,9 +13,23 @@
     <body>
         <a href="#">Button</a>
         <a href="#">Button</a>
+        <script type="text/javascript">
+          const buttons = document.querySelectorAll("a");
+          buttons.forEach(btn => {
+            btn.addEventListener("click", function(e){
+              let x = e.clientX - e.target.offsetLeft;
+              let y = e.clientY - e.target.offsetTop;
+
+              let ripples = document.createElement("span");
+              ripples.style.left = x + "px";
+              ripples.style.top = y + "px";
+              this.appendChild(ripples);
+            })
+          })
+        
+        </script>
     <body>
 
-        
 </html>
 
 <style>
@@ -43,10 +57,17 @@ background: linear-gradient(90deg,#0162c8,#55e7fc);
 }
 a:nth-child(2)
 {
-background: linear-gradient(90deg,#755bea,#55e7fc);
+background: linear-gradient(90deg,#755bea,#ff72c0);
 
 }
-
+span{
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
 
 </style>
 
