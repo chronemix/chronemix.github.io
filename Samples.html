@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <title>Samples</title>             <!--Titel-->
-  <div id="navbar">
+ <div id="navbar">
     <a class="active" href="index.html">Home</a>
     <a href="Samples.html">Samples</a>
     <a href="Kontakt.html">Kontakt</a>
@@ -38,4 +38,20 @@
   }
   </script>
 </head>
+<body>
 
+    	<div id="instafeed-container"></div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJVQ1ZAzNWtPT0tLdzhobU4wbTVsXzhLM3lNcTA1VXVLeGRkSlQzaHd5RlVWYmxZANkFVT2RVRXdUM0hOZAXNxd18wZAm9BM3FCenNxU21iSlBuYTdRY3dGdl9ObDVSdEF1d2NlUlFuN2ZAQMzF1YjdkNgZDZD'
+	});
+	userFeed.run();
+	</script>
+</body>
