@@ -1,29 +1,41 @@
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
-    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="myscripts.js"></script>
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    <title>Samples</title>             <!--Titel-->
-
-<style>
-      body {
-        background-color: #292929;
-        color: white;
-        font-family: 'Lato', helvetica, sans-serif
-      }  
-      a img{ 
-        width: 25%;
+  <title>Samples</title>             <!--Titel-->
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="Samples.html">Samples</a>
+    <a href="Kontakt.html">Kontakt</a>
+    <a href="#">About</a>
+  </div>
+  
+  
+  
+  <script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
     }
-</style>
+  }
+  </script>
 </head>
 
-
-<body>
-
-</body>

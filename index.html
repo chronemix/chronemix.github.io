@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="myscripts.js"></script>
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -12,33 +14,36 @@
   <meta name="theme-color" content="#ffffff">
 
   <title>Startseite</title>             <!--Titel-->
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="Samples.html">Samples</a>
+    <a href="Kontakt.html">Kontakt</a>
+    <a href="#">About</a>
+  </div>
+  
+  
+  
+  <script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
 </head>
-  <style>
-    body {
-      background-color: #292929;
-      color: white;
-      font-family: 'Lato', helvetica, sans-serif
-    } 
-    a{
-      position: relative;
-      display: inline-block;
-      padding: 12px 36px;
-      margin: 10px 0;
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 18px;
-      letter-spacing: 2px;
-      border-radius: 40px;
-      background: linear-gradient(90deg,#0162c8,#55e7fc);
-    }
-    ul{
-        list-style-type: none;
-    }
-  </style>
+
 
 
 <body>
+  
+  
   <ul>
    <li><a href="testeugen.html">Tests 1</a></li>
    <li><a href="Kontakt.html">Kontakt</a></li>
@@ -46,7 +51,10 @@
    <li><a href="testlennke.html">Test 2</a></li>
    <li><a href="testchrone.html">Test 3</a></li>
   </ul>
+
+
+
 </body>
 
 
-</html>
+
