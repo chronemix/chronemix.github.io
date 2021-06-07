@@ -3,7 +3,6 @@
 </head>
 <script src="myscripts.js"></script>
 <head>
-  
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
@@ -22,15 +21,21 @@
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
   <meta name="theme-color" content="black">
 
-  <title>Startseite</title>             <!--Titel-->
+  <title>Games</title>             <!--Titel-->
   <div id="navbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="Games.html">Games</a>
+    <a href="index.html">Home</a>
+    <a class="active" href="Games.html">Games</a>
     <a href="About.html">About</a>
     <a href="Impressum.html">Impressum</a>
     <a href="Datenschutz.html">Datenschutz</a>
   </div>
   
+
+  <style>
+
+    span { margin-left: 5cm;  }
+
+  </style>
   
   
   <script>
@@ -48,19 +53,28 @@
   }
   </script>
 </head>
-
-
-
-<body>
-  <br>
+<body id="Bilder">
   <div style="display: flex; flex-direction: row; justify-content: center;">
     <div>
-      <center><img src="Bilder/a1.png" width="750px" height="360px" ><img></center>
-      <p><center>Wir sind BASEIX, eine Esports Organisation. Wir wollen nicht die besten in irgendeinem Spiel werden, sondern hauptsächlich Spaß haben und dabei in Ligen und Turnieren teilnehmen. Aktuell liegt unser Fokus auf dem Spiel <a href="Rocket League.html">Rocket League</a><br>Außerdem wollen wir ein Counter-Strike: Global Offensive Team stellen, dafür suchen wir aktuell aber noch Team Member.
-    <br><br>
-    Mit unserem Rocket League Team, haben wir schon an mehreren Turnieren erfolgreich teilgenommen, so haben wir es zum Beispiel in der <a href=https://nitroleague.de>Nitro League </a>bis in die 3. Division geschafft, bevor wir eine Pause genommen haben.</div></center></p>
+      <br><br>
+      <h1><p><span><center>Rocket League</center></p></h1></span>
+      
+       <a href="Rocket League.html"><img src="Bilder/rl.jpg" width="50%" ><img></a>
     </div>
+
+    <div>
+      <h1><p><center>Counter-Strike: <br>
+            Global Offensive</center></p></h1>
+       <a href="Csgo.html"><img src="Bilder/CSGO.jpg" width="50%" ><img></a>
+    </div>
+
+    <div>
+      <br><br>
+      <h1><p><center>SimRacing</center></p></h1>
+      
+       <a href="f1.html"><img src="Bilder/f1.jpg" width="50%" ><img></a>
+    </div>
+  </div>
+  
+ 
 </body>
-
-
-
